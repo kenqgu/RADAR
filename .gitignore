@@ -1,0 +1,12 @@
+.env
+.vscode/
+# data/
+radar/llm/textgen/cache/** 
+**/__pycache__/
+radar-benchmark/
+*.zip
+pyproject.toml.poetry
+json_data/*
+load_data.py
+eval_outputs/*
+.lm_cache/*

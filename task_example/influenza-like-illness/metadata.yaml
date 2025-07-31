@@ -1,0 +1,13 @@
+task_id: influenza-like-illness
+query: Of the recordings in the dataset, what is the median number of ILI cases with AGE 25-64 for a week? Return your answer rounded to the nearest 1 decimal place.
+query_cols:
+    - ILI AGE 25-64
+minimum_columns:
+    - REGION TYPE
+    - REGION
+    - WEEK
+    - YEAR
+    - ILI AGE 25-49
+    - ILI AGE 25-64
+    - ILI AGE 50-64
+dataset_source: https://gis.cdc.gov/grasp/fluview/fluportaldashboard.html

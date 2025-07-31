@@ -1,0 +1,36 @@
+[project]
+name = "radar"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ken", email = "ken.qgu@cs.washington.edu" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=3.6.0",
+    "diskcache>=5.6.3",
+    "gcsfs>=2025.3.0",
+    "gemma==2.0.8",
+    "google-generativeai>=0.8.5",
+    "ipykernel>=6.29.5",
+    "kauldron>=0.1.0",
+    "langchain>=0.3.25",
+    "langfun[all]>=0.1.2.dev202506070804",
+    "loguru>=0.7.3",
+    "orjson>=3.10.18",
+    "pandas>=2.3.0",
+    "pydantic>=2.11.5",
+    "python-dotenv>=1.1.0",
+    "pyyaml>=6.0.2",
+    "tiktoken>=0.9.0",
+    "typer>=0.16.0",
+]
+
+[project.scripts]
+build = "radar.cli.build_task:main"
+evaluate = "radar.cli.evaluate:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
